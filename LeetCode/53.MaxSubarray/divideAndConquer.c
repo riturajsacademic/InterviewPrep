@@ -21,6 +21,8 @@ int FindCrossMax(int *nums, int low, int mid, int high) {
         }
     }
     
+    lsum = max(lsum,0);
+    rsum = max(rsum,0);
     return (lsum+rsum);
 }
 
@@ -53,4 +55,4 @@ int FindMaxSubArray(int* nums, int low, int high)
 
 int maxSubArray(int* nums, int numsSize) {
     return FindMaxSubArray(nums,0,numsSize-1);
-}
+}   
